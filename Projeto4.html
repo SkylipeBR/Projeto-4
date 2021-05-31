@@ -1,0 +1,55 @@
+<html>
+<link rel="stylesheet" href="Projeto4.css">
+    <head><title>
+        Projeto 4
+    </title></head>
+    <body>
+        <div class="grid">
+            <div class="logo">
+                <img src="file:///C:/Users/filip/Documents/C%C3%B3digos/images/base-apparel-coming-soon-master/images/logo.svg" alt="logo">
+            </div>
+            <div class="Text-h1">
+                <h1 class="h11">WE ' RE </h1>
+                   <h1 class="h12">COMING<BR>
+                                 SOON</h1>
+                    <p>Lorem Ipsum is simply dummy text of the<br> printing and typesetting industry.
+                        Lorem Ipsum has been the industry's <br>standard dummy text ever since the 1500s,
+                       </p>
+                
+            </div>
+            <form method="post" action="" onSubmit="return ( verifica() )" name="frmEnvia">
+                
+                <input name="email" type="text" class="input" id="email" onblur="checarEmail();" />
+                <input class="form-submit-button" name="submit" type="submit" value=" > " />
+        
+                   
+               <img src="foto.JPG" alt="foto" class="foto2">
+                
+                <script>
+
+                </script>
+
+            </div>
+        </div>
+        <script type="text/javascript">
+            function verifica() {
+              if (document.forms[0].email.value.length == 0) {
+                alert('Por favor, informe o seu EMAIL.');
+                document.frmEnvia.email.focus();
+                return false;
+              }
+              return true;
+            }
+             
+            function checarEmail(){
+            if( document.forms[0].email.value=="" 
+               || document.forms[0].email.value.indexOf('@')==-1 
+                 || document.forms[0].email.value.indexOf('.')==-1 )
+                {
+                   alert( "Por favor, informe um E-MAIL válido!" );
+                   return false;
+                }
+            }
+            </script>
+    </body>
+</html>
